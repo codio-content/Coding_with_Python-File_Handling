@@ -1,0 +1,269 @@
+{
+ "sections": [
+  {
+   "id": "58ee87fc-6ebf-f57b-3b51-e657d3b32848",
+   "title": "Introduction",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-58ee.md",
+   "chapter": true,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "38876619-c44b-f650-ec60-15031a52c104",
+   "title": "Experiments",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "experiment.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Experiments-3887.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "26b3b9d4-dbbd-4c55-46fa-f06ce9eeda68",
+   "title": "Overview",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Overview-26b3.md",
+   "chapter": true,
+   "reset": [
+    "1-intro"
+   ],
+   "teacherOnly": false
+  },
+  {
+   "id": "34b0e379-e27c-77dc-e6d7-1b5be29ce8e",
+   "title": "Reading files",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-intro/poem.py",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "1-intro/poem.txt",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Reading-files-34b0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "b35dbbe9-a576-9066-1d59-19f8a3df2f",
+   "title": "New lines",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/New-lines-b35d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "e8432617-e7c8-526a-a550-ff0cca2ffc7",
+   "title": "Rows and columns",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Rows-and-columns-e843.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "36428db4-2a45-2ea2-613d-830a250c5735",
+   "title": "File storage and CSV",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-intro/data.csv",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [
+    "1-intro"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/File-storage-and-CSV-3642.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "56c6a34d-50f5-f433-f62f-e56012fac287",
+   "title": "Parsing the data",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-intro/read2.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Parsing-the-data-56c6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "b63fafbf-f035-e51f-2f67-c74b3144fa0c",
+   "title": "Writing data to a CSV file",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-intro/write-demo.csv",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "1-intro/write.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Writing-data-to-a-CSV-file-b63f.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "e7c72e4-d5bc-3f93-bdf7-3b9f4c95b66d",
+   "title": "Challenges",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Challenges-e7c7.md",
+   "chapter": true,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "4238daac-101f-a37b-e549-a8575e76904",
+   "title": "Read strings with commas",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenge1/read-escaped.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [
+    "challenge1"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/Read-strings-with-commas-4238.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "69fc813d-535e-a9f2-48eb-c5bb2c69184",
+   "title": "Write escape sequence",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenge2/write-escaped.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "challenge2"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/Write-escape-sequence-69fc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "36a9e90d-c09f-7e6f-e2b0-aa68e70d477",
+   "title": "All done!!",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/All-done---36a9.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": ""
+}
