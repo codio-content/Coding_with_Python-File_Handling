@@ -4,7 +4,7 @@ We need to *parse* it into a proper Javascript array. Parse means *to split up d
 
 {Run the code}(/home/codio/workspace/read2.sh)
 
-## String .split() method
+## .split() method
 
 Here's a reminder of our file data.
 
@@ -15,7 +15,7 @@ Bob,31,Green,Renault
 ```
 
 ### Columns
-A String's `split()` method will split a string at each occurence of the supplied string and then return the result as a list.
+A String's `split()` method will split a string at each occurrence of the supplied string and then return the result as a list.
 
 ```python
   columns = line.split(',')
