@@ -1,11 +1,10 @@
-Files are used to store data. More advanced applications use databases such as MySQL or MongoDB to store and retrieve large amounts of data in a flexible way.
-
-But for many more basic applications, working with regular files is a simpler and very good way of storing and managing data.
+Files are used to store data permanently, even after a program exits. Typically, files are stored on some durable storage like a diskdrive and they are given a name. The data can be used at a later time by opening the file by its name and loading the data.
 
 You are probably familiar with files for things like 
 
 - documents
 - spreadsheets
-- images
+- images or videos
+- MP3 for music
 
-However, they can be used to store more structured data like the things we worked on with 2 dimensional lists in the last Unit.
+However, they can be used to store any kind of data like the things we worked on with 2 dimensional arrays in the last Unit.
