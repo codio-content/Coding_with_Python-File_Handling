@@ -2,7 +2,7 @@
  "sections": [
   {
    "id": "58ee87fc-6ebf-f57b-3b51-e657d3b32848",
-   "title": "Introduction",
+   "title": "Introduction to Files",
    "files": [
     {
      "path": "#tabs",
@@ -12,8 +12,19 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Introduction-58ee.md",
+   "content-file": ".guides/content/Introduction-to-Files-58ee.md",
    "chapter": true,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "a1414173-bdc7-783-4080-b9113d0cb612",
+   "title": "Preparation video",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Preparation-video-a141.md",
+   "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
@@ -41,7 +52,7 @@
   },
   {
    "id": "26b3b9d4-dbbd-4c55-46fa-f06ce9eeda68",
-   "title": "Overview",
+   "title": "File Names",
    "files": [
     {
      "path": "#tabs",
@@ -51,202 +62,234 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Overview-26b3.md",
+   "content-file": ".guides/content/File-Names-26b3.md",
    "chapter": true,
-   "reset": [
-    "1-intro"
-   ],
-   "teacherOnly": false
-  },
-  {
-   "id": "34b0e379-e27c-77dc-e6d7-1b5be29ce8e",
-   "title": "Reading files",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "1-intro/poem.py",
-     "panel": 0,
-     "action": "open"
-    },
-    {
-     "path": "1-intro/poem.txt",
-     "panel": 1,
-     "action": "open"
-    }
-   ],
-   "layout": "3-cell",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Reading-files-34b0.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false
-  },
-  {
-   "id": "b35dbbe9-a576-9066-1d59-19f8a3df2f",
-   "title": "New lines",
-   "files": [],
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/New-lines-b35d.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false
-  },
-  {
-   "id": "e8432617-e7c8-526a-a550-ff0cca2ffc7",
-   "title": "Rows and columns",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    }
-   ],
-   "layout": "1-panel",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Rows-and-columns-e843.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false
-  },
-  {
-   "id": "36428db4-2a45-2ea2-613d-830a250c5735",
-   "title": "File storage and CSV",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "1-intro/data.csv",
-     "panel": 0,
-     "action": "open"
-    }
-   ],
-   "layout": "2-panels",
-   "path": [
-    "1-intro"
-   ],
-   "type": "markdown",
-   "content-file": ".guides/content/File-storage-and-CSV-3642.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false
-  },
-  {
-   "id": "56c6a34d-50f5-f433-f62f-e56012fac287",
-   "title": "Parsing the data",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "1-intro/read2.py",
-     "panel": 0,
-     "action": "open"
-    }
-   ],
-   "layout": "2-panels",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Parsing-the-data-56c6.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false
-  },
-  {
-   "id": "b63fafbf-f035-e51f-2f67-c74b3144fa0c",
-   "title": "Writing data to a CSV file",
-   "files": [
-    {
-     "path": "#tabs",
-     "action": "close"
-    },
-    {
-     "path": "1-intro/write-demo.csv",
-     "panel": 0,
-     "action": "open"
-    },
-    {
-     "path": "1-intro/write.py",
-     "panel": 0,
-     "action": "open"
-    }
-   ],
-   "layout": "",
-   "path": [],
-   "type": "markdown",
-   "content-file": ".guides/content/Writing-data-to-a-CSV-file-b63f.md",
-   "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "e7c72e4-d5bc-3f93-bdf7-3b9f4c95b66d",
-   "title": "Challenges",
+   "title": "File Descriptors",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     }
    ],
-   "layout": "",
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenges-e7c7.md",
+   "content-file": ".guides/content/File-Descriptors-e7c7.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
   },
   {
-   "id": "4238daac-101f-a37b-e549-a8575e76904",
-   "title": "Read strings with commas",
+   "id": "32903f97-aacb-f6b8-820c-6d082d3795a1",
+   "title": "Opening a File",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     },
     {
-     "path": "challenge1/read-escaped.py",
+     "path": "content/open-file.py",
      "panel": 0,
      "action": "open"
     }
    ],
-   "layout": "2-panels-tree",
-   "path": [
-    "challenge1"
-   ],
+   "layout": "2-panels",
+   "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Read-strings-with-commas-4238.md",
+   "content-file": ".guides/content/Opening-a-File-3290.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "d0cdde2c-b859-c95d-26ad-23bccd6cd63c",
+   "title": "Closing a File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "content/close-file.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Closing-a-File-d0cd.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "8ce824f3-792e-afee-cd9a-a492db4c2fee",
+   "title": "Text Files",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Text-Files-8ce8.md",
+   "chapter": true,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "54bcedae-cc13-238d-cbb-a422d61cd52f",
+   "title": "Text Encoding",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Text-Encoding-54bc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "dc51d96f-44e-6956-c823-ae0414c78762",
+   "title": "Reading a Text File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/read-text-file.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Reading-a-Text-File-dc51.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "8d464b7-3780-da4c-a3ec-33768dcda3e",
+   "title": "Writing a Text File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/write-text-file.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Writing-a-Text-File-8d46.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "281116aa-4412-31f8-5b4a-838ba0d7a92",
+   "title": "Data Formats",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Data-Formats-2811.md",
+   "chapter": true,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "11edbcfa-945a-8ea9-ab6e-e4833173f048",
+   "title": "Identifying File Formats",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Identifying-File-Formats-11ed.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "c3e1d8de-1947-822c-fddc-60577539eff",
+   "title": "Fixed Length Records",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/fixed-length-record.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Fixed-Length-Records-c3e1.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "4238daac-101f-a37b-e549-a8575e76904",
+   "title": "Variable Length Records",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/variable-length.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Variable-Length-Records-4238.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "69fc813d-535e-a9f2-48eb-c5bb2c69184",
-   "title": "Write escape sequence",
+   "title": "Final Challenge",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
     },
     {
-     "path": "challenge2/write-escaped.py",
+     "path": "challenges/bank-transactions.py",
      "panel": 0,
      "action": "open"
     }
    ],
    "layout": "",
-   "path": [
-    "challenge2"
-   ],
+   "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Write-escape-sequence-69fc.md",
+   "content-file": ".guides/content/Final-Challenge-69fc.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
@@ -254,7 +297,13 @@
   {
    "id": "36a9e90d-c09f-7e6f-e2b0-aa68e70d477",
    "title": "All done!!",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/All-done---36a9.md",

@@ -1,0 +1,1 @@
+Having a file without knowing how information is organized in the file is not very useful. Once we understand how to take the data in a file and structure it in a way we can work with, it becomes useful information.
