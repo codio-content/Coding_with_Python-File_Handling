@@ -17,40 +17,39 @@ Note that there are no newline characters at the end of the records. It is split
 |||guidance
 ### Solution
 ```python
-// Get the filepath from the command line
+# Get the filepath from the command line
 P= sys.argv[2] 
 F= sys.argv[3]
 L= sys.argv[4]
 B= sys.argv[5]
 
-// Your code goes here
-f= open(P, 'r')
+# Your Code Goes Here
 
-// Read the contents of P into `data`
-data= f.read()
+f= open(P, 'r')  # Open the file
+data= f.read()   # Read the contents of P into `data`
+f.close()        # close the file
 
-// Create a list of all the records
-var recordList= []
-while(data.length > 0){
-  var record= []
-  record[0]= data.substring(0,16)
-  record[1]= data.substring(16,32)
-  record[2]= data.substring(32,40)
-  recordList.push(record)
-  data= data.substring(40)
-}
+# Create a list of all the records
+recordList= []
+while(len(data) > 0):
+  record= []
+  record.append(data[0:16])
+  record.append(data[16:32])
+  record.append(data[32:40])
+  recordList.append(record)
+  data= data[40:]
 
-// Find the matching name
-var output= ''
-for(var i=0; i < recordList.length; i++){
-  var thisRecord= recordList[i]
-  if(thisRecord[0].trim() == F && thisRecord[1].trim() == L){
+# Find the matching name
+output= ''
+for i in range(0, len(recordList)):
+  thisRecord= recordList[i]
+  if(thisRecord[0].strip() == F and thisRecord[1].strip() == L):
     thisRecord[2]= B
-  }
+  # Either way, write the record out
   output+= thisRecord[0] + thisRecord[1] + thisRecord[2]
-}
 
-// Write out the finished string to our file P
-fs.writeFileSync(P, output, 'utf8')
+f= open(P, 'w')     # open the file for output
+f.write(output)     # write the output
+f.close()           # close the file
 
 ```

@@ -8,19 +8,22 @@ logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 script = 'challenges/fixed-length-record.py'
 CPATH= 'content/textfiles';
 
-# get the correct output
 def correctOutput(input):
   inputPath= input[0]
-  fn= (input[1] + "                ")[0:16]
-  ln= (input[2] + "                ")[0:16]
-  newBday= (input[3] + '        ')[0:8]
+  fn= input[1]
+  ln= input[2]
+  newBday= input[3]
   filecontent= open(inputPath, 'r').read()
-  myOutput= re.sub(r''+fn+ln+'........', fn+ln+newBday, filecontent);
+  myOutput= re.sub(r'(^|\s+|\W+)'+fn+'\|'+ln+'\|\d+', r"\1"+fn+"|"+ln+"|"+newBday, filecontent);
+  myOutput+= "TLS"
   return myOutput
 
-# validation function that the test harness calls
+  
 def validate(input, internalTestOutput, studentTestOutput):
   studentOutput= open(input[0]).read()
+  logging.debug(input)
+  logging.debug(studentOutput)
+  logging.debug(internalTestOutput)
   return studentOutput == internalTestOutput
   
 
