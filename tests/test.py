@@ -61,13 +61,9 @@ def test(_file, _inputs, _outputs, _message = 'Not quite right please try again'
 
     # if validate is a callable function, call it
     if(callable(_validate)):
-      logging.debug("VALIDATE IS CALLABLE")
       if(not _validate(_inputs, _outputs, outputs)):
-        logging.debug("VALIDATE FAILED")
         print(_message)
         exit(1)
-      else:
-        logging.debug("VALIDATE WAS GOOD")    
 
     # _validate was not there, so use our default validation
     else:
