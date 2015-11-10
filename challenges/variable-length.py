@@ -16,11 +16,6 @@ B= sys.argv[5]
 # 
 def load2dArrayFromFile(filepath):
   # Your code goes here:
-  f= open(filepath)
-  t= f.read()
-  lines= t.split("\n")
-  for i in range(0, len(lines)):
-    lines[i]= lines[i].split("|")
 
 #
 # Searches the 2d array 'records' for firstname, lastname.
@@ -28,31 +23,20 @@ def load2dArrayFromFile(filepath):
 # 
 def findIndex(records, firstname, lastname):
   # Your code goes here:
-  for i in range(0, len(records)):
-    if(records[i][0] == firstname and records[i][1] == lastname):
-      return i
-  return -1
+
 
 # Sets the birthday of the record at the given index
 # Returns: nothing
 def setBirthday(records, index, newBirthday):
   # Your code goes here:
-  records[index][2]= newBirthday
   
-# Convert one record into a pipe-delimited string
-# Return the pipe-delimited string
-def makeLineFromRecord(record):
-  # Your code goes here:
-  return "|".join(record)
-  
+
 # Convert the 2d array back into a string
 # Return the text of the 2d array
 def makeTextFrom2dArray(records):
   # Your code goes here:
-  for i in range(0,len(records)):
-    records[i]= makeLineFromRecord(records[i])
-  return "\n".join(records)    
   
+
 # ----------------------------------------------------------------
 # 
 #  Our main code body, where we call our functions.
@@ -71,8 +55,7 @@ setBirthday(records, indexWeAreHunting, B)
 # Convert the records into a text string
 output= makeTextFrom2dArray(records)
 
-# Your code goes here
 # write the text string out to the file
-
+# Your code goes here
 
 

@@ -15,95 +15,80 @@ Working with files and records is a great time to use functions. The example pro
 |||guidance
 ### Solution
 ```python
-// Load the file system library
-var fs = require('fs')             
+# Get the filepath from the command line
+P= sys.argv[2] 
+F= sys.argv[3]
+L= sys.argv[4]
+B= sys.argv[5]
 
-// Get the filepath from the command line
-var P= process.argv[2] 
-var F= process.argv[3]
-var L= process.argv[4]
-var B= process.argv[5]
+# ----------------------------------------------------------------
+# 
+# Our Helper functions:
+# 
+# ----------------------------------------------------------------
 
-// ----------------------------------------------------------------
-// 
-// Our Helper functions:
-// 
-// ----------------------------------------------------------------
+#
+# Loads the file at filepath 
+# Returns a 2d array with the data
+# 
+def load2dArrayFromFile(filepath):
+  # Your code goes here:
+  f= open(filepath)
+  t= f.read()
+  lines= t.split("\n")
+  for i in range(0, len(lines)):
+    lines[i]= lines[i].split("|")
+  return lines
 
-//
-// Loads the file at filepath 
-// Returns a 2d array with the data
-// 
-function load2dArrayFromFile(filepath){
-  // Your code goes here:
-  var text= fs.readFileSync(filepath, 'utf8')
-  var records= text.split("\n")
-  for(var i=0; i < records.length; i++){
-    records[i]= records[i].split("|")
-  }
-  return records
-}
-
-//
-// Searches the 2d array 'records' for firstname, lastname.
-// Returns the index of the record or -1 if no record exists
-// 
-function findIndex(records, firstname, lastname){
-  // Your code goes here:
-  for(var i=0; i < records.length; i++){
-    if(records[i][0] == firstname && records[i][1] == lastname){
+#
+# Searches the 2d array 'records' for firstname, lastname.
+# Returns the index of the record or -1 if no record exists
+# 
+def findIndex(records, firstname, lastname):
+  # Your code goes here:
+  for i in range(0, len(records)):
+    if(records[i][0] == firstname and records[i][1] == lastname):
       return i
-    }
-  }
   return -1
-}
 
-// Sets the birthday of the record at the given index
-// Returns: nothing
-function setBirthday(records, index, newBirthday){
-  // Your code goes here:
-  if(index >= 0 && index < records.length){
+# Sets the birthday of the record at the given index
+# Returns: nothing
+def setBirthday(records, index, newBirthday):
+  # Your code goes here:
+  if(index >= 0):
     records[index][2]= newBirthday
-  }
-}
+  
+# Convert the 2d array back into a string
+# Return the text of the 2d array
+def makeTextFrom2dArray(records):
+  # Your code goes here:
+  for i in range(0,len(records)):
+    records[i]= "|".join(records[i])
+  return "\n".join(records)    
+  
+# ----------------------------------------------------------------
+# 
+#  Our main code body, where we call our functions.
+#  
+# ----------------------------------------------------------------
 
-// Convert one record into a pipe-delimited string
-function makeLineFromRecord(record){
-  // Your code goes here:
-  return record.join("|");
-}
+# Load our records from the file into a 2d array
+records= load2dArrayFromFile(P)
 
-// Convert the 2d array back into a string and return it
-function makeTextFrom2dArray(records){
-  // Your code goes here:
-  var lines= []
-  for(var i=0; i < records.length; i++){
-    lines.push(makeLineFromRecord(records[i]))
-  }
-  return lines.join("\n")
-}
+# Find out which index, if any, has the name we are hunting
+indexWeAreHunting= findIndex(records, F, L)
 
-// ----------------------------------------------------------------
-// 
-//  Our main code body, where we call our functions.
-//  
-// ----------------------------------------------------------------
-
-// Load our records from the file into a 2d array
-var records= load2dArrayFromFile(P)
-
-// Find out which index, if any, has the name we are hunting
-var indexWeAreHunting= findIndex(records, F, L)
-
-// Set the birthday record to the one we were passed
+# Set the birthday record to the one we were passed
 setBirthday(records, indexWeAreHunting, B)
 
-// Convert the records into a text string
-var output= makeTextFrom2dArray(records)
+# Convert the records into a text string
+output= makeTextFrom2dArray(records)
 
-// write the text string out to the file
-fs.writeFileSync(P, output, 'utf8')
-
+# Your code goes here
+# write the text string out to the file
+o= open(P, 'w')
+o.write(output)
+o.close()
 
 
 ```

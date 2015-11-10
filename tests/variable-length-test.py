@@ -5,7 +5,7 @@ import re
 import logging
 logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 
-script = 'challenges/variable-length-record.py'
+script = 'challenges/variable-length.py'
 CPATH= 'content/textfiles';
 
 def correctOutput(input):
@@ -20,9 +20,6 @@ def correctOutput(input):
   
 def validate(input, internalTestOutput, studentTestOutput):
   studentOutput= open(input[0]).read()
-  logging.debug(input)
-  logging.debug(studentOutput)
-  logging.debug(internalTestOutput)
   return studentOutput == internalTestOutput
   
 
