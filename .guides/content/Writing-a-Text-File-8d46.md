@@ -28,11 +28,14 @@ O= sys.argv[3]
 S= sys.argv[4]
 T= sys.argv[5]
 
+logging.debug("IN STUDENT")
+
 # Your code goes here
 
 # Load the data from the inputPath
-f= open(I, 'w')
-filedata= f.read()
+f= open(I, 'r')       # open file for read and write
+filedata= f.read()    # read the data
+f.close()             # close the file
 
 # Create a variable to hold our output while we build it
 output= ""
@@ -41,17 +44,17 @@ output= ""
 positionS= filedata.find(S)
 
 # If positionS is -1, we are done.
-while(positionS >= 0) {
+while(positionS >= 0) :
   output= output + filedata[0:positionS] + T
   filedata= filedata[positionS + len(S):]
   positionS= filedata.find(S)
-}
+
 output= output + filedata
 
 # Write out the contents.
-f.write(output)
+f2= open(O, 'w')    # open the output file for writing
+f2.write(output)    # write the output
+f2.close()          # close the file
 
-# Close the file
-f.close()
 ```
 |||
