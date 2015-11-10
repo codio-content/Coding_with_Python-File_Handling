@@ -8,11 +8,13 @@ Hint: Use Functions
 ----
 Working with files and records is a great time to use functions. The example program provided in the challenge has **stubs**, empty functions, for you to fill out to help.
 
-{Check It!|assessment}(test-2358046206)
+
+{Check It!|assessment}(test-4023378015)
+
 
 |||guidance
 ### Solution
-```javascript
+```python
 // Load the file system library
 var fs = require('fs')             
 
