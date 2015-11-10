@@ -9,6 +9,29 @@ Hint: Use Functions
 Working with files and records is a great time to use functions. The example program provided in the challenge has **stubs**, empty functions, for you to fill out to help.
 
 
+### The Array.join() function
+There is a function called `join()` help convert an array of strings into a single string with a delimiter between the parts.
+
+```python
+list= ['a', 'b', 'c']
+delimter= ':'
+print(delimter.join(list))
+```
+{Run the code}(python content/join.py)
+
+### The String.split() function
+There is another function called `split()` that you may find will help you. 
+
+```python
+text= 'a:b:c:d'
+delimiter= '':'
+list= text.split(delimiter)
+print(str(list))
+```
+{Run the code}(python content/split.py)
+
+
+
 {Check It!|assessment}(test-4023378015)
 
 
