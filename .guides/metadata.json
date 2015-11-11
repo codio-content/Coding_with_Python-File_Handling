@@ -37,7 +37,7 @@
      "action": "close"
     },
     {
-     "path": "experiment.py",
+     "path": "content/experiment.py",
      "panel": 0,
      "action": "open"
     }

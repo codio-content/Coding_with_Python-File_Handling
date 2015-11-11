@@ -6,9 +6,9 @@ The second file **( F2 )** will contain instructions: one on each line. The inst
 
 `COMMAND | AMOUNT | ACCOUNT NUMBER | PIN CODE`
 
-Command will be either `add` or `sub`. If the command is `add`, you will add `AMOUNNT` to the customer total in the account files **( F1 )**. If the command is `sub`, you will subtract. 
+`COMMAND` will be either `add` or `sub`. If the command is `add`, you will add `AMOUNT` to the `BALANCE` in the account files **( F1 )**. If the command is `sub`, you will subtract. 
 
-However, there are a number of reasons that you may need to reject the transation. If you are asked to subtract an amount that would put the account below zero or if the pin code you are provided does not match the pin code in the account record, the transaction is ignored.
+However, there are a number of reasons for which you may need to reject the transaction. If you are asked to subtract an amount that would put the account below zero or if the pin code you are provided does not match the pin code in the account record, the transaction is ignored.
 
 
 {Check It!|assessment}(test-1550596684)

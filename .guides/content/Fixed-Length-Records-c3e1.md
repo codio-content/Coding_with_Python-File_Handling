@@ -10,7 +10,20 @@ Our file would look like this:
 
 Note that there are no newline characters at the end of the records. It is split up here so we can read it.
 
-**Hint:** you might find the `trim()` function helpful. It removes whitespace from the front and end of a string.
+
+### The `String.strip()` Function
+----
+You might find the `strip()` function helpful. It removes whitespace from the front and end of a string.
+
+```python
+text= '  Words   Other   Words\tTab   '
+print(':' + text + ':')
+text= text.strip()
+print(':' + text + ':')
+```
+{Run the code}(python content/strip.py)
+
+
 
 {Check It!|assessment}(test-2484565952)
 
