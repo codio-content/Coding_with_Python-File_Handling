@@ -11,74 +11,63 @@ Command will be either `add` or `sub`. If the command is `add`, you will add `AM
 However, there are a number of reasons that you may need to reject the transation. If you are asked to subtract an amount that would put the account below zero or if the pin code you are provided does not match the pin code in the account record, the transaction is ignored.
 
 
+{Check It!|assessment}(test-1550596684)
 
-{Check It!|assessment}(test-1690867941)
 
 |||guidance
 ### Solution
 ```javascript
-// Load the file system library
-var fs = require('fs')             
+# Get the filepath from the command line
+F1= sys.argv[2] 
+F2= sys.argv[3]
 
-// Get the filepath from the command line
-var F1= process.argv[2] 
-var F2= process.argv[3]
+# Your code goes here
 
-// Your code goes here
-
-
-//
-// Create a function that turns pipe-delimited strings 
-// into 2d arrays
-// 
-function pipe2a(text){
-  var records= text.split("\n")
-  for(var i=0; i < records.length; i++){
+#
+# Create a function that turns pipe-delimited strings into 2d arrays
+# 
+def pipe2a(text):
+  records= text.split("\n")
+  for i in range(0, len(records)):
     records[i]= records[i].split("|")
-  }
   return records
-}
 
-//
-// Create a function that turns 2d arrays into 
-// pipe-delimited strings.
-// 
-function a2pipe(a){
-  var text= ""
-  for(var i=0; i < a.length; i++){
-    var record= a[i]
-    text+= record.join("|") + "\n"
-  }
+#
+# Create a function that turns 2d arrays into pipe-delimited strings.
+# 
+def a2pipe(a):
+  text= ""
+  for i in range(0, len(a)):
+    text = text + "|".join(a[i]) + "\n"
   return text;
-}
 
-// Read in the accounts and transactions
-var accounts= pipe2a(fs.readFileSync(F1, 'utf8'))
-var transactions= pipe2a(fs.readFileSync(F2, 'utf8'))
+#
+# Read in the accounts and transactions
+# 
+accounts= pipe2a(open(F1, 'r').read())
+transactions= pipe2a(open(F2, 'r').read())
 
-// for each transaction
-for(var transactionIndex=0; transactionIndex < transactions.length; transactionIndex++){
-  var transaction= transactions[transactionIndex]
-  // look for the matching account
-  var accountFound= false
-  for(var accountIndex=0; !accountFound && accountIndex < accounts.length; accountIndex++){
-    var account= accounts[accountIndex]
-    var balance= parseInt(account[2])
-    var transactionAmount= parseInt(transaction[1])
-    if(account[0] == transaction[2]){
-      accountFound= true;
-      if(account[1] == transaction[3]){
-        if(transaction[0] == 'add'){
+# ----------------------------------------------------------------
+# Main Section
+#
+
+# for each transaction
+for transactionIndex in range(0, len(transations)):
+  transaction= transactions[transactionIndex]
+  # look through the accounts for the matching account
+  for accountIndex in range(0,len(accounts)):
+    account= accounts[accountIndex]
+    balance= int(account[2])
+    transactionAmount= int(transaction[1])
+    if(account[0] == transaction[2]):         # account matches?
+      if(account[1] == transaction[3]):       # pin code matches?
+        if(transaction[0] == 'add'):          
           accounts[accountIndex][2]= balance + transactionAmount 
-        } else if (transaction[0] == 'sub' && change <= balance){
+        else if (transaction[0] == 'sub' && change <= balance):
           accounts[accountIndex][2]= balance - transactionAmount           
-        }
-      }
-    }
-  }
-}
 
-// Write the answer back out to the original file
-fs.writeFileSync(F1, a2pipe(accounts), 'utf8')
+          
+# Write the answer back out to the original file
+open(F1, 'w').write(a2pipe(accounts))
 ```
 |||
