@@ -1,8 +1,10 @@
+
 # Get the filepath from the command line
-P= sys.argv[2] 
-F= sys.argv[3]
-L= sys.argv[4]
-B= sys.argv[5]
+import sys
+P= sys.argv[1] 
+F= sys.argv[2]
+L= sys.argv[3]
+B= sys.argv[4]
 
 # ----------------------------------------------------------------
 # 
@@ -24,19 +26,16 @@ def load2dArrayFromFile(filepath):
 def findIndex(records, firstname, lastname):
   # Your code goes here:
 
-
 # Sets the birthday of the record at the given index
 # Returns: nothing
 def setBirthday(records, index, newBirthday):
   # Your code goes here:
   
-
 # Convert the 2d array back into a string
 # Return the text of the 2d array
 def makeTextFrom2dArray(records):
   # Your code goes here:
   
-
 # ----------------------------------------------------------------
 # 
 #  Our main code body, where we call our functions.
@@ -55,7 +54,5 @@ setBirthday(records, indexWeAreHunting, B)
 # Convert the records into a text string
 output= makeTextFrom2dArray(records)
 
-# write the text string out to the file
 # Your code goes here
-
-
+# write the text string out to the file

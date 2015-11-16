@@ -1,8 +1,9 @@
+import sys
 
 # Example of opening a file and then closing it
-path1= sys.argv[2]          # the pathname to some file
-path2= sys.argv[3]          # the pathname to some file
-path3= sys.argv[4]          # the pathname to some file
+path1= sys.argv[1]          # the pathname to some file
+path2= sys.argv[2]          # the pathname to some file
+path3= sys.argv[3]          # the pathname to some file
 
 # Open first 2 files
 print ('Opening first file')

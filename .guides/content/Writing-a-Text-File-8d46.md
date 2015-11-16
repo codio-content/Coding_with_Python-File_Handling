@@ -22,13 +22,13 @@ fd1.write(text)
 |||guidance
 ### Solution
 ```python
-# Get the filepath from the command line
-I= sys.argv[2] 
-O= sys.argv[3] 
-S= sys.argv[4]
-T= sys.argv[5]
 
-logging.debug("IN STUDENT")
+# Get the filepath from the command line
+import sys
+I= sys.argv[1] 
+O= sys.argv[2] 
+S= sys.argv[3]
+T= sys.argv[4]
 
 # Your code goes here
 
@@ -55,6 +55,5 @@ output= output + filedata
 f2= open(O, 'w')    # open the output file for writing
 f2.write(output)    # write the output
 f2.close()          # close the file
-
 ```
 |||

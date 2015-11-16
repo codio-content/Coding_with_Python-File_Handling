@@ -1,5 +1,6 @@
 # Get the pathname from the command line
-pathname= sys.argv[2]
+import sys
+pathname= sys.argv[1]
 
 # Opens a file named “pathname”
 # Returns a file descriptor we will 
