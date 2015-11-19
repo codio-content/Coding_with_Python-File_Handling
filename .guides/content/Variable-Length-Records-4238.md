@@ -31,90 +31,21 @@ print(str(list))
 ```
 {Run the code}(python content/split.py)
 
-
-
-{Check It!|assessment}(test-4023378015)
-
-
-|||guidance
-### Solution
+Sample Program:
+----
+Now look at the sample provided that manages a simple pipe delimited string. It uses functions in the program. It also uses the `split()` function to convert pipe delimited strings into lists:
 ```python
-# Get the filepath from the command line
-import sys
-P= sys.argv[1] 
-F= sys.argv[2]
-L= sys.argv[3]
-B= sys.argv[4]
-
-# ----------------------------------------------------------------
-# 
-# Our Helper functions:
-# 
-# ----------------------------------------------------------------
-
-#
-# Loads the file at filepath 
-# Returns a 2d array with the data
-# 
-def load2dArrayFromFile(filepath):
-  # Your code goes here:
-  f= open(filepath)
-  t= f.read()
-  lines= t.split("\n")
-  for i in range(0, len(lines)):
-    lines[i]= lines[i].split("|")
-  return lines
-
-#
-# Searches the 2d array 'records' for firstname, lastname.
-# Returns the index of the record or -1 if no record exists
-# 
-def findIndex(records, firstname, lastname):
-  # Your code goes here:
-  for i in range(0, len(records)):
-    if(records[i][0] == firstname and records[i][1] == lastname):
-      return i
-  return -1
-
-# Sets the birthday of the record at the given index
-# Returns: nothing
-def setBirthday(records, index, newBirthday):
-  # Your code goes here:
-  if(index >= 0):
-    records[index][2]= newBirthday
-  
-# Convert the 2d array back into a string
-# Return the text of the 2d array
-def makeTextFrom2dArray(records):
-  # Your code goes here:
-  for i in range(0,len(records)):
-    records[i]= "|".join(records[i])
-  return "\n".join(records)    
-  
-# ----------------------------------------------------------------
-# 
-#  Our main code body, where we call our functions.
-#  
-# ----------------------------------------------------------------
-
-# Load our records from the file into a 2d array
-records= load2dArrayFromFile(P)
-
-# Find out which index, if any, has the name we are hunting
-indexWeAreHunting= findIndex(records, F, L)
-
-# Set the birthday record to the one we were passed
-setBirthday(records, indexWeAreHunting, B)
-
-# Convert the records into a text string
-output= makeTextFrom2dArray(records)
-
-# Your code goes here
-# write the text string out to the file
-o= open(P, 'w')
-o.write(output)
-o.close()
-
-
+6  def getListFromPipeDelimitedText(pipeDelimitedText):
+7    recordList= pipeDelimitedText.split('|')
+8    return recordList
 ```
-|||
+
+It also uses the `join()` function to convert lists into pipe delimited strings:
+
+```python
+11  def getPipeDelimitedTextFromList(recordList):
+12    return ('|').join(recordList)
+```
+{Run the Pipe Sample Program}(python3 content/pipe-split.py)
+
+These should help you with the next challenge.

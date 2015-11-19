@@ -74,9 +74,14 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "content/file-descriptor.py",
+     "panel": 0,
+     "action": "open"
     }
    ],
-   "layout": "1-panel",
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/File-Descriptors-e7c7.md",
@@ -93,7 +98,7 @@
      "action": "close"
     },
     {
-     "path": "content/open-file.py",
+     "path": "content/file-descriptor.py",
      "panel": 0,
      "action": "open"
     }
@@ -115,7 +120,7 @@
      "action": "close"
     },
     {
-     "path": "content/close-file.py",
+     "path": "content/file-descriptor.py",
      "panel": 0,
      "action": "open"
     }
@@ -165,7 +170,7 @@
      "action": "close"
     },
     {
-     "path": "challenges/read-text-file.py",
+     "path": "content/read-text-file.py",
      "panel": 0,
      "action": "open"
     }
@@ -179,8 +184,52 @@
    "teacherOnly": false
   },
   {
+   "id": "2a41ff35-3265-8b9c-b2e5-a2ce79bb9d24",
+   "title": "Challenge: Reading a Text File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/read-text-file.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Challenge--Reading-a-Text-File-2a41.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
    "id": "8d464b7-3780-da4c-a3ec-33768dcda3e",
    "title": "Writing a Text File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "content/write-text-file.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Writing-a-Text-File-8d46.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "f9d2d0fd-3f70-1b9f-69c6-9ead996f7359",
+   "title": "Challenge: Writing a Text File",
    "files": [
     {
      "path": "#tabs",
@@ -195,7 +244,7 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Writing-a-Text-File-8d46.md",
+   "content-file": ".guides/content/Challenge--Writing-a-Text-File-f9d2.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
@@ -237,7 +286,7 @@
      "action": "close"
     },
     {
-     "path": "challenges/fixed-length-record.py",
+     "path": "content/parse-text.py",
      "panel": 0,
      "action": "open"
     }
@@ -251,8 +300,52 @@
    "teacherOnly": false
   },
   {
+   "id": "5b19bc7-9292-e9f9-c750-c4beb479d81e",
+   "title": "Challenge: Fixed Length Records",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "challenges/fixed-length-record.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Challenge--Fixed-Length-Records-5b19.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
    "id": "4238daac-101f-a37b-e549-a8575e76904",
    "title": "Variable Length Records",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "content/pipe-split.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Variable-Length-Records-4238.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "fdcd3b32-614f-7a3b-c21f-4f28164f254",
+   "title": "Challenge: Variable Length Records",
    "files": [
     {
      "path": "#tabs",
@@ -267,7 +360,7 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Variable-Length-Records-4238.md",
+   "content-file": ".guides/content/Challenge--Variable-Length-Records-fdcd.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false

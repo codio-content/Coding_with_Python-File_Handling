@@ -1,59 +1,22 @@
-We can write the contents of a variable out to a file all at once like this:
+We can write the contents of a variable out to a file all at once after we have opened the file:
 
 ```python
-// get the path to the file
-path= sys.argv[2]      
-// something to write out
-text= "Some text"       
-
-// open the file for writing
-fd1= open(P, 'w')
-
-// write contents of ‘text’
-// - to the file ‘path’
-fd1.write(text)
+7   # open our file for writing
+8   file1= open(filepath, 'w')
+9
+10  # write 'text', to the file at ‘filepath’
+11  file1.write(text)
+12  file1.close()
 ```
+Make sure you notice that the file was opened with the `'w'` option telling the system we wanted to write to the file. Also note that the we closed the file.
 
+When we want to read the contents of the file that we just wrote, we open the file again for reading with the `'r'` option this time at line 15.
 
-{Check It!|assessment}(test-1033858382)
-
-
-
-|||guidance
-### Solution
 ```python
-
-# Get the filepath from the command line
-import sys
-I= sys.argv[1] 
-O= sys.argv[2] 
-S= sys.argv[3]
-T= sys.argv[4]
-
-# Your code goes here
-
-# Load the data from the inputPath
-f= open(I, 'r')       # open file for read and write
-filedata= f.read()    # read the data
-f.close()             # close the file
-
-# Create a variable to hold our output while we build it
-output= ""
-
-# Find the first occurance of S
-positionS= filedata.find(S)
-
-# If positionS is -1, we are done.
-while(positionS >= 0) :
-  output= output + filedata[0:positionS] + T
-  filedata= filedata[positionS + len(S):]
-  positionS= filedata.find(S)
-
-output= output + filedata
-
-# Write out the contents.
-f2= open(O, 'w')    # open the output file for writing
-f2.write(output)    # write the output
-f2.close()          # close the file
+14  # print out the contents of the file
+15  file1= open(filepath, 'r')
+16  print(file1.read())
+17  file1.close()
 ```
-|||
+
+{Run the write sample}(python3 content/write-text-file.py)
