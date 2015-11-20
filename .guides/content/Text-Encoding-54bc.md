@@ -14,7 +14,7 @@ The name ‘UTF-8’ is derived from: * **U**niversal Coded Character Set + **T*
 
 Comparison Table
 ----
-This tables shows how these different encoding types convert binary information into characters for humans to read. NOtice that there is no ASCII character for the copyright symbol. UTF-8 uses two bytes to display it.
+This tables shows how these different encoding types convert binary information into characters for humans to read. Notice that there is no ASCII character for the copyright symbol. UTF-8 uses two bytes to display it.
 
 <table>
 <thead><th>Binary</th><th>Decimal</th><th>ASCII</th><th>UTF-8</th></thead>

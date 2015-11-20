@@ -7,7 +7,7 @@ Since we do not use the “|” (pipe) character in normal sentences, it is a co
 Hints:
 ----
 ### Use Functions of Your Own
-Working with files and records is a great time to use functions. The example program provided in the challenge has **stubs**, empty functions, for you to fill out to help.
+Working with files and records is a great time to use functions. The example program provided in the challenge has **stubs** (empty functions) for you to fill out to help.
 
 
 ### Array.join()
