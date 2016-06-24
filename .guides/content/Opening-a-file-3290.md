@@ -8,4 +8,4 @@ Most systems have more than one program running at a time. In order to ensure th
 
 {Run the sample}(python3 content/file-descriptor.py)
 
-Python wraps all this file handling business up in a single variable to hide the details from the programmer, allowing us to focus on using the file to get what we want from it.
+Python deals with file handling by using a single variable to hide the details from the programmer. This allows us to focus on using the file to get what we want from it.

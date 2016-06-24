@@ -1,4 +1,4 @@
-For your final challenge of this Unit, we will load two files. The first file **( F1 )** will have information about some accounts. It will be pipe-delimited and have one record per line, with these fields:
+For your final challenge in this unit, you will load two files. The first file `F1` will have information about some accounts. It will be pipe-delimited and have one record per line, with these fields:
 
 `ACCOUNT NUMBER | PIN CODE | BALANCE`
 

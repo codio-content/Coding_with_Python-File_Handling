@@ -1,4 +1,4 @@
-In order to read a text file, the **encoding type** or, *how the file was encoded* must be known. Once we know the *encoding type*, it is easy to convert the bytes of data in a file into text.
+In order to read a text file, the **encoding type** or, *how the file was encoded* must be known. Once you know the *encoding type*, it is easy to convert the bytes of data in a file into text.
 
 ASCII (1963)
 ----
@@ -14,7 +14,7 @@ The name ‘UTF-8’ is derived from: * **U**niversal Coded Character Set + **T*
 
 Comparison Table
 ----
-This tables shows how these different encoding types convert binary information into characters for humans to read. Notice that there is no ASCII character for the copyright symbol. UTF-8 uses two bytes to display it.
+This table shows how these different encoding types convert binary information into characters for humans to read. Notice that there is no ASCII character for the copyright symbol. UTF-8 uses two bytes to display it.
 
 <table>
 <thead><th>Binary</th><th>Decimal</th><th>ASCII</th><th>UTF-8</th></thead>

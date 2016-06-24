@@ -2,7 +2,7 @@
  "sections": [
   {
    "id": "58ee87fc-6ebf-f57b-3b51-e657d3b32848",
-   "title": "Introduction to Files",
+   "title": "Introduction to files",
    "files": [
     {
      "path": "#tabs",
@@ -12,7 +12,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Introduction-to-Files-58ee.md",
+   "content-file": ".guides/content/Introduction-to-files-58ee.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
@@ -41,7 +41,7 @@
   },
   {
    "id": "26b3b9d4-dbbd-4c55-46fa-f06ce9eeda68",
-   "title": "File Names",
+   "title": "File names",
    "files": [
     {
      "path": "#tabs",
@@ -51,14 +51,14 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/File-Names-26b3.md",
+   "content-file": ".guides/content/File-names-26b3.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "e7c72e4-d5bc-3f93-bdf7-3b9f4c95b66d",
-   "title": "File Descriptors",
+   "title": "File descriptors",
    "files": [
     {
      "path": "#tabs",
@@ -73,14 +73,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/File-Descriptors-e7c7.md",
+   "content-file": ".guides/content/File-descriptors-e7c7.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "32903f97-aacb-f6b8-820c-6d082d3795a1",
-   "title": "Opening a File",
+   "title": "Opening a file",
    "files": [
     {
      "path": "#tabs",
@@ -95,14 +95,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Opening-a-File-3290.md",
+   "content-file": ".guides/content/Opening-a-file-3290.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "d0cdde2c-b859-c95d-26ad-23bccd6cd63c",
-   "title": "Closing a File",
+   "title": "Closing a file",
    "files": [
     {
      "path": "#tabs",
@@ -117,14 +117,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Closing-a-File-d0cd.md",
+   "content-file": ".guides/content/Closing-a-file-d0cd.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "8ce824f3-792e-afee-cd9a-a492db4c2fee",
-   "title": "Text Files",
+   "title": "Text files",
    "files": [
     {
      "path": "#tabs",
@@ -134,25 +134,25 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Text-Files-8ce8.md",
+   "content-file": ".guides/content/Text-files-8ce8.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "54bcedae-cc13-238d-cbb-a422d61cd52f",
-   "title": "Text Encoding",
+   "title": "Text encoding",
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Text-Encoding-54bc.md",
+   "content-file": ".guides/content/Text-encoding-54bc.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "dc51d96f-44e-6956-c823-ae0414c78762",
-   "title": "Reading a Text File",
+   "title": "Reading a text file",
    "files": [
     {
      "path": "#tabs",
@@ -167,14 +167,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Reading-a-Text-File-dc51.md",
+   "content-file": ".guides/content/Reading-a-text-file-dc51.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "2a41ff35-3265-8b9c-b2e5-a2ce79bb9d24",
-   "title": "Challenge: Reading a Text File",
+   "title": "Challenge: reading a text file",
    "files": [
     {
      "path": "#tabs",
@@ -189,14 +189,14 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenge--Reading-a-Text-File-2a41.md",
+   "content-file": ".guides/content/Challenge--reading-a-text-file-2a41.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "8d464b7-3780-da4c-a3ec-33768dcda3e",
-   "title": "Writing a Text File",
+   "title": "Writing a text file",
    "files": [
     {
      "path": "#tabs",
@@ -211,14 +211,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Writing-a-Text-File-8d46.md",
+   "content-file": ".guides/content/Writing-a-text-file-8d46.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "f9d2d0fd-3f70-1b9f-69c6-9ead996f7359",
-   "title": "Challenge: Writing a Text File",
+   "title": "Challenge: writing a text file",
    "files": [
     {
      "path": "#tabs",
@@ -233,14 +233,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenge--Writing-a-Text-File-f9d2.md",
+   "content-file": ".guides/content/Challenge--writing-a-text-file-f9d2.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "281116aa-4412-31f8-5b4a-838ba0d7a92",
-   "title": "Data Formats",
+   "title": "Data formats",
    "files": [
     {
      "path": "#tabs",
@@ -250,25 +250,25 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Data-Formats-2811.md",
+   "content-file": ".guides/content/Data-formats-2811.md",
    "chapter": true,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "11edbcfa-945a-8ea9-ab6e-e4833173f048",
-   "title": "Identifying File Formats",
+   "title": "Identifying file formats",
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Identifying-File-Formats-11ed.md",
+   "content-file": ".guides/content/Identifying-file-formats-11ed.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "c3e1d8de-1947-822c-fddc-60577539eff",
-   "title": "Fixed Length Records",
+   "title": "Fixed length records",
    "files": [
     {
      "path": "#tabs",
@@ -283,7 +283,7 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Fixed-Length-Records-c3e1.md",
+   "content-file": ".guides/content/Fixed-length-records-c3e1.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
@@ -312,7 +312,7 @@
   },
   {
    "id": "4238daac-101f-a37b-e549-a8575e76904",
-   "title": "Variable Length Records",
+   "title": "Variable length records",
    "files": [
     {
      "path": "#tabs",
@@ -327,14 +327,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Variable-Length-Records-4238.md",
+   "content-file": ".guides/content/Variable-length-records-4238.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "fdcd3b32-614f-7a3b-c21f-4f28164f254",
-   "title": "Challenge: Variable Length Records",
+   "title": "Challenge: variable length records",
    "files": [
     {
      "path": "#tabs",
@@ -349,14 +349,14 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Challenge--Variable-Length-Records-fdcd.md",
+   "content-file": ".guides/content/Challenge--variable-length-records-fdcd.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false
   },
   {
    "id": "69fc813d-535e-a9f2-48eb-c5bb2c69184",
-   "title": "Final Challenge",
+   "title": "Final challenge",
    "files": [
     {
      "path": "#tabs",
