@@ -6,7 +6,7 @@ The second file `F2` will contain instructions: one on each line. The instructio
 
 `COMMAND | AMOUNT | ACCOUNT NUMBER | PIN CODE`
 
-`COMMAND` will be either `add` or `sub`. If the command is `add`, you will add `AMOUNT` to the `BALANCE` in the account files `F1`. If the command is `sub`, you will subtract. 
+`COMMAND` will be either `add` or `sub`. If the command is `add`, you will add `AMOUNT` to the `BALANCE` in the account files `F1`. If the command is `sub`, you will subtract.
 
 However, there are a number of reasons for which you may need to reject the transaction. If you are asked to subtract an amount that would put the account below zero or if the pin code you are provided does not match the pin code in the account record, the transaction is ignored.
 
@@ -19,7 +19,7 @@ However, there are a number of reasons for which you may need to reject the tran
 ```python
 # Get the filepath from the command line
 import sys
-F1= sys.argv[1] 
+F1= sys.argv[1]
 F2= sys.argv[2]
 
 # Your code goes here
@@ -42,7 +42,7 @@ def a2pipe(a):
     account= a[i]
     for j in range(0, len(account)):
       account[j]= str(account[j])
-      
+
     text = text + "|".join(account) + "\n"
   return text;
 
@@ -64,17 +64,17 @@ for transactionIndex in range(0, len(transactions)):
     # look through the accounts for the matching account
     for accountIndex in range(0,len(accounts)):
       account= accounts[accountIndex]
-      if(len(account) >= 3):                      # make sure we have 
+      if(len(account) >= 3):                      # make sure we have
         balance= int(account[2])                  # enough fields
         transactionAmount= int(transaction[1])
         if(account[0] == transaction[2]):         # account matches?
           if(account[1] == transaction[3]):       # pin code matches?
-            if(transaction[0] == 'add'):          
-              accounts[accountIndex][2]= balance + transactionAmount 
+            if(transaction[0] == 'add'):
+              accounts[accountIndex][2]= balance + transactionAmount
             elif (transaction[0] == 'sub' and transactionAmount <= balance):
-              accounts[accountIndex][2]= balance - transactionAmount           
+              accounts[accountIndex][2]= balance - transactionAmount
 
-          
+
 # Write the answer back out to the original file
 open(F1, 'w').write(a2pipe(accounts))
 

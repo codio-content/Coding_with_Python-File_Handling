@@ -1,0 +1,114 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-1033858382",
+  "source": {
+   "showName": true,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "tests/write-text-file-test.sh",
+   "instructions": "You will be provided a file path for input `I`, a file path for output `O`, a string `S`, and a string `T`.\n\nRead the contents of `I`, replacing each occurrence of `S` with `T` and write the resulting information to file `O`. \n\nYou should replace `O` if it already exists.",
+   "name": "Write a File"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1550596684",
+  "source": {
+   "showName": true,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "tests/bank-transactions-test.sh",
+   "instructions": "Given pipe-delimited files **F1** and **F2** where **F1** contains accounts with fields `ACCOUNT NUM|PIN|BALANCE` and **F2** contains transaction instructions `COMMAND|AMOUNT|ACCOUNT NUM|PIN`, execute the transactions, storing the results back in **F1**. \n\nThe `COMMAND` field will be `add` or `sub` indicating addition or subtraction from the account.\n\nTransactions which do not provide the correct `PIN` code or attempt to put the account below zero should be ignored.",
+   "name": "Account Transactions"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1572606935",
+  "source": {
+   "showName": true,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "tests/read-text-file-test.sh",
+   "instructions": "You will be passed a file path `P` and string `S` on the command line. Output the number of times the string `S` appears in the file `P`.",
+   "name": "Read a Text File"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2484565952",
+  "source": {
+   "showName": true,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "tests/fixed-length-record-test.sh",
+   "instructions": "You will be passed the filename `P`, firstname `F`, lastname `L`, and a new birthday `B`.\n\nLoad the fixed length record file in `P`, search for `F`,`L` in the first and change birthday to `B`. \n\nThen save the file.",
+   "name": "Fixed Length Records"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3353555413",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "./ch-read-test.sh",
+   "instructions": "Take a look at the file called `data.csv` in the file tree. You can see we have used `|c` to represent a comma.\n\n1. You should read in this file and parse it into a 2 dimensional array as done in previous CSV examples.\n1. After converting the data into lists replace any occurrences of `|c` in the contained strings with `,`. You will need to use a String's `.replace(old, new)` method. The method replaces any occurrences of `old` with `new`and returns the modified String. Don't forget to save the returned version somewhere!\n \nOutput the fully converted array using the `output()` function.\n\nInput: \n\nHello|cWorld,One,1\nSean's file,Two,2\n\nOutput: [['Hello World','One', '1']['Sean\\\\'s file','Two','2']\n\nWe recommend you draw a flow chart to describe the process.\n",
+   "name": "Read string with commas"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-4023378015",
+  "source": {
+   "showName": true,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "tests/variable-length-test.sh",
+   "instructions": "Load the pipe-delimited file `P`. It is organized with 3 fields on each line: `firstname|lastname|birthday`.\n\nSearch for the firstname `F` and lastname `L`, replacing the birthday with `B`. Write the file back out in the same pipe-delimited format.",
+   "name": "Variable Length Record"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-808628205",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "points": 1,
+   "command": "./ch-write-test.sh",
+   "instructions": "We will input a 2 dimensional list. This array may contain string with `,`s within any string. It may also contain numbers.\n\n1. Replace any `,` with `|c`. You will need to use a String’s `.replace(old, new)` method. The method replaces any occurrences of `old` with `new` and returns the modified String. Don’t forget to save the returned version somewhere!\n1. You should build a string with all the data correctly formatted for CSV output.\n1. Each row, **except the last**, should end with a `'\\n'` newline character\n1. Each field should be separated by a `,`.\n1. Make sure that the last field in a row does not have a `,` after it.\n\nFinally write the data to a file called 'data.csv'\n",
+   "name": "Write escaped commas"
+  }
+ }
+]
