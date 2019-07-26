@@ -1,0 +1,134 @@
+{
+ "name": "Coding_with_Python-File_Handling",
+ "children": [
+  {
+   "title": "Introduction to files",
+   "id": "58ee87fc-6ebf-f57b-3b51-e657d3b32848",
+   "pageId": "58ee87fc-6ebf-f57b-3b51-e657d3b32848",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Experiments",
+     "id": "38876619-c44b-f650-ec60-15031a52c104",
+     "pageId": "38876619-c44b-f650-ec60-15031a52c104",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "File names",
+   "id": "26b3b9d4-dbbd-4c55-46fa-f06ce9eeda68",
+   "pageId": "26b3b9d4-dbbd-4c55-46fa-f06ce9eeda68",
+   "type": "chapter",
+   "children": []
+  },
+  {
+   "title": "File descriptors",
+   "id": "e7c72e4-d5bc-3f93-bdf7-3b9f4c95b66d",
+   "pageId": "e7c72e4-d5bc-3f93-bdf7-3b9f4c95b66d",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Opening a file",
+     "id": "32903f97-aacb-f6b8-820c-6d082d3795a1",
+     "pageId": "32903f97-aacb-f6b8-820c-6d082d3795a1",
+     "type": "page"
+    },
+    {
+     "title": "Closing a file",
+     "id": "d0cdde2c-b859-c95d-26ad-23bccd6cd63c",
+     "pageId": "d0cdde2c-b859-c95d-26ad-23bccd6cd63c",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Text files",
+   "id": "8ce824f3-792e-afee-cd9a-a492db4c2fee",
+   "pageId": "8ce824f3-792e-afee-cd9a-a492db4c2fee",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Text encoding",
+     "id": "54bcedae-cc13-238d-cbb-a422d61cd52f",
+     "pageId": "54bcedae-cc13-238d-cbb-a422d61cd52f",
+     "type": "page"
+    },
+    {
+     "title": "Reading a text file",
+     "id": "dc51d96f-44e-6956-c823-ae0414c78762",
+     "pageId": "dc51d96f-44e-6956-c823-ae0414c78762",
+     "type": "page"
+    },
+    {
+     "title": "Challenge: reading a text file",
+     "id": "2a41ff35-3265-8b9c-b2e5-a2ce79bb9d24",
+     "pageId": "2a41ff35-3265-8b9c-b2e5-a2ce79bb9d24",
+     "type": "page"
+    },
+    {
+     "title": "Writing a text file",
+     "id": "8d464b7-3780-da4c-a3ec-33768dcda3e",
+     "pageId": "8d464b7-3780-da4c-a3ec-33768dcda3e",
+     "type": "page"
+    },
+    {
+     "title": "Challenge: writing a text file",
+     "id": "f9d2d0fd-3f70-1b9f-69c6-9ead996f7359",
+     "pageId": "f9d2d0fd-3f70-1b9f-69c6-9ead996f7359",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Data formats",
+   "id": "281116aa-4412-31f8-5b4a-838ba0d7a92",
+   "pageId": "281116aa-4412-31f8-5b4a-838ba0d7a92",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Identifying file formats",
+     "id": "11edbcfa-945a-8ea9-ab6e-e4833173f048",
+     "pageId": "11edbcfa-945a-8ea9-ab6e-e4833173f048",
+     "type": "page"
+    },
+    {
+     "title": "Fixed length records",
+     "id": "c3e1d8de-1947-822c-fddc-60577539eff",
+     "pageId": "c3e1d8de-1947-822c-fddc-60577539eff",
+     "type": "page"
+    },
+    {
+     "title": "Challenge: Fixed Length Records",
+     "id": "5b19bc7-9292-e9f9-c750-c4beb479d81e",
+     "pageId": "5b19bc7-9292-e9f9-c750-c4beb479d81e",
+     "type": "page"
+    },
+    {
+     "title": "Variable length records",
+     "id": "4238daac-101f-a37b-e549-a8575e76904",
+     "pageId": "4238daac-101f-a37b-e549-a8575e76904",
+     "type": "page"
+    },
+    {
+     "title": "Challenge: variable length records",
+     "id": "fdcd3b32-614f-7a3b-c21f-4f28164f254",
+     "pageId": "fdcd3b32-614f-7a3b-c21f-4f28164f254",
+     "type": "page"
+    },
+    {
+     "title": "Final challenge",
+     "id": "69fc813d-535e-a9f2-48eb-c5bb2c69184",
+     "pageId": "69fc813d-535e-a9f2-48eb-c5bb2c69184",
+     "type": "page"
+    },
+    {
+     "title": "All done!!",
+     "id": "36a9e90d-c09f-7e6f-e2b0-aa68e70d477",
+     "pageId": "36a9e90d-c09f-7e6f-e2b0-aa68e70d477",
+     "type": "page"
+    }
+   ]
+  }
+ ]
+}
